@@ -28,6 +28,7 @@ export default class Paddle {
   draw(ctx) {
     ctx.fillStyle = "#0ff";
     ctx.fillRect(this.position.x, this.position.y, this.width, this.height);
+    console.log('paddle draw completed');
   }
 
   update(deltaTime) {
