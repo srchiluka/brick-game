@@ -24,9 +24,9 @@ function gameLoop(timestamp) {
   ctx.clearRect(0, 0, 800, 600);
   paddle.update(deltaTime);
   paddle.draw(ctx);
-  ctx.drawImage(imgBall, 10, 10);
-
-  requestAnimationFrame(gameLoop);
+  ctx.drawImage(imgBall, 10, 10, 16, 16);
+  console.log("draw ball completed");
+  //requestAnimationFrame(gameLoop);
 }
 
 //gameLoop();
